@@ -1,0 +1,21 @@
+// 🎮 Here I am going to build the game setup using 3 design patterns.
+Combined patterns:
+1. Singleton
+2. Builder
+3. Factory
+
+There is only one GameManager, so I will use the Singleton Pattern.
+==================================================
+
+Next, I need to build the character specifications like name, energy, and dress.
+For that, I will use the Builder Pattern.
+
+Character Belongings - Builder Pattern
+==================================================
+
+Finally, I will create the character skills using the Factory Pattern.
+
+Character Making - Factory Pattern
+✅ Pattern: Factory
+
+

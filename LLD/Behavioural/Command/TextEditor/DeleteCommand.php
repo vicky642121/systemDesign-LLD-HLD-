@@ -1,8 +1,9 @@
 <?php
 
-require_once __DIR__ .'/TextEditor.php';
-require_once __DIR__ .'/CommonInterface.php';
+require_once __DIR__ . '/TextEditor.php';
+require_once __DIR__ . '/CommonInterface.php';
 
+//concrete command each wraps the one or more action
 class DeleteCommand implements CommonInterface
 {
     private TextEditor $editor;

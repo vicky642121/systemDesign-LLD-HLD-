@@ -1,5 +1,7 @@
 <?php
 
+
+//Receivers
 class TextEditor
 {
     private string $text = "";

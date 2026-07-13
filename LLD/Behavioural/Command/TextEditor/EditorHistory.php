@@ -2,6 +2,8 @@
 
 require_once __DIR__ .'/CommonInterface.php';
 
+//invokers 
+// (Remote — triggers commands, tracks history)
 class EditorHistory
 {
     private array $history = [];

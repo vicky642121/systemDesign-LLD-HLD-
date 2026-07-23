@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/BoardElement.php';
+require_once __DIR__ . '../../Creational/FactoryPattern/BoardElement.php';
 
 class Ladder implements BoardElement
 {

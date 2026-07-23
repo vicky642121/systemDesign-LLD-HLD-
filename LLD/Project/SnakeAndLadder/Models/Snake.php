@@ -1,6 +1,8 @@
 <?php
 
-class SnakeFactory implements BoardElement
+require_once __DIR__ . '../../Creational/FactoryPattern/BoardElement.php';
+
+class Snake implements BoardElement
 {
     private int $head;
     private int $tail;
@@ -11,12 +13,12 @@ class SnakeFactory implements BoardElement
         $this->tail = $tail;
     }
 
-    public function getStart():int
+    public function getStart(): int
     {
         return $this->head;
     }
 
-    public function getEnd():int
+    public function getEnd(): int
     {
         return $this->tail;
     }

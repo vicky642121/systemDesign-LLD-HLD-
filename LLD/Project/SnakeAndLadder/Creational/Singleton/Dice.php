@@ -4,8 +4,9 @@ class Dice
 {
     private static ?Dice $instance = null;
 
-    private function __construct() {
-        echo "Instance Created"."\n";
+    private function __construct()
+    {
+        echo "Instance Created" . "\n";
     }
 
     public function __wakeup() {}
@@ -19,5 +20,10 @@ class Dice
         }
 
         return self::$instance;
+    }
+
+    public function roll(): int
+    {
+        return rand(1, 6);
     }
 }

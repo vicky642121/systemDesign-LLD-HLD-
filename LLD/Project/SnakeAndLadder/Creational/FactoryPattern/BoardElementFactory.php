@@ -1,8 +1,8 @@
 <?php
 
 require_once __DIR__ . '/BoardElement.php';
-require_once __DIR__ . '/SnakeFactory.php';
-require_once __DIR__ . '/LadderFactory.php';
+require_once __DIR__ . '../../../Models/Snake.php';
+require_once __DIR__ . '../../../Models/Ladder.php';
 
 class BoardElementFactory
 {
@@ -10,9 +10,9 @@ class BoardElementFactory
     {
         switch ($type) {
             case 'snake':
-                return new SnakeFactory($start,$end);
+                return new Snake($start,$end);
             case 'ladder':
-                return new LadderFactory($start,$end);
+                return new Ladder($start,$end);
             default:
                 throw new InvalidArgumentException("Invalid type: " . $type);
         }
